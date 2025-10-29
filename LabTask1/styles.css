@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(140, 167, 194);
+}
+
+.container {
+    margin-left: 25%;
+    background-color: whitesmoke;
+    border: 5px double black;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 5%;
+    width: 90%;
+    padding: 10px;
+  }
+
+  ul {
+    font-size: 0.9rem;
+    line-height: 30px;
+  }
+
+  button {
+    width: 90px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: #f0f0f0; /* softer for mobile */
+  }
+
+  .container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    height: 35px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+}
+
+
+.container h1 {
+   padding-bottom: 10px;
+   padding-top: 10px;
+}
+
+#heading {
+    color: blue;
+}
+
+ul {
+ line-height: 40px;
+ list-style: none;
+ margin-left: 5px;
+ font-size: 1rem;
+}
+
+.list-point-decor {
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px; 
+}
+
+input[type="text"] {
+  margin-top: 10px; 
+  height :30px;
+  width:auto;
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding : 15px;
+    background-color: blue;
+    color: whitesmoke;
+    font-weight: bold;
+    border:none;
+    border-radius: 15px;
+    height: 60px;
+    width: 100px;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: rgba(78, 78, 242, 0.896);
+    transform: scale(1.1);
+}
+
+.button-group {
+  display: flex;
+  gap: 15px; 
+  margin-top: 15px;
+}
